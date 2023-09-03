@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet_Shelter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="wholebanner">
+        <div class="topbox">
+            <!-- upper half of banner -->
+            <div class="tophalfbanner">
+                <!-- the heart and pet shelter top left side banner -->
+                <div class="MainHeader">
+                    <img id="imagesize" src="assets/heart-light.png" alt="heart">
+                    <span class="title">Pet Shelter</span>
+                </div>
+                <!-- Top right side lables / find a pet, about, donate button -->
+                <div class="RightSideLabels">
+                    <label class="findpet">Find a Pet</label>
+                    <label class="about">About</label>
+                    <Button class="donate" onclick="donate(this)">Donate</Button>
+                </div>
+            </div>
+        </div>
+        <!-- lower half of banner -->
+        <div class="bottomhalfbanner">
+            <!-- Pets dropdown menue -->
+            <div class="anypets">
+                <label>I'm looking for a...</label><br>
+                <div class="alignment">
+                    <img class="smallimage" src="assets/paw-light.png" alt="paw">
+                    <select class="bannerboxes" name="animal" onchange="choice(this)">
+                        <option >Any Pets</option>
+                        <option >Cat</option>
+                        <option >Dog</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Location, city, zip code/ search bar -->
+            <div class="location">
+                <Label>in or near...</Label><br>
+                <div class="alignment">
+                    <img class="smallimage" src="assets/pin-light.png" alt="pin Light">
+                    <input class="bannerboxes" type="text" placeholder="City or Zip Code">
+                </div>
+            </div>
+            <!-- Purple box -->
+                <span class="purplebox">Find my new best friend</span> 
+        </div>
+    </div>
+        <!-- Section below the banner -->
+        <div class="center">
+            <div class="Pets">
+                <!-- first animal box -->
+                <div class="EachAnimalBox">
+                    <img src="assets/pepper.jpg" alt="pepper">
+                    <div class="PetName">
+                        <h2>Pepper</h2>
+                        <p class="descriptionSize">Pepper is a slightly shy grey tabby, but she really loves showing her human affedction.</p>
+                    </div>
+                    <div class="PetCounting">
+                        <P class="descriptionSize"><span id="pepper">3</span> petting(s)</P>
+                        <button class="ButtonSize" onclick="Petting('pepper')">Pet Pepper</button>
+                    </div>
+                </div>
+                <!-- second animal box -->
+                <div class="EachAnimalBox">
+                    <img src="assets/bruce.jpg" alt="Bruce">
+                    <div class="PetName">
+                        <h2>Bruce</h2>
+                        <p class="descriptionSize">Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                    </div>
+                    <div class="PetCounting">
+                        <P class="descriptionSize"><span id="Bruce">5</span> petting(s)</P>
+                        <button class="ButtonSize" onclick="Petting('Bruce')">Pet Bruce</button>
+                    </div>
+                </div>
+                <!-- Third animal box -->
+                <div class="EachAnimalBox">
+                    <img src="assets/oscar.jpg" alt="Oscar">
+                    <div class="PetName">
+                        <h2>Oscar</h2>
+                        <p class="descriptionSize">Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+                    </div>
+                    <div class="PetCounting">
+                        <P class="descriptionSize"><span id="Oscar">8</span> petting(s)</P>
+                        <button class="ButtonSize" onclick="Petting('Oscar')">Pet Oscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
